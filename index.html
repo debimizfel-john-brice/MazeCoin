@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<!-- TODO revisar todo -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/coins.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="script.js"></script>
+  <title>MazeCoin</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <nav class="nav container">
+    <ul>
+      <li><img src="assets/logo.png" /></li>
+      <li>
+        <h2>MazeCoin</h2>
+      </li>
+    </ul>
+    <ul>
+      <li class="nav-option pointer ellipsis active" data-page="#coins_page">Coins</li>
+      <li class="nav-option pointer ellipsis disabled" id="live_reports" data-page="#live_reports_page">Live
+        Reports
+      </li>
+      <li class="nav-option ellipsis pointer" data-page="#about_page">About</li>
+      <li>
+        <input type="search" id="search-input" placeholder="Serach a crypto" />
+      </li>
+    </ul>
+  </nav>
+
+  <div class="background">
+    <div class="container">
+      <!-- Modal -->
+      <dialog id="selected-coins-modal"></dialog>
+
+      <!-- Body -->
+      <main class="main">
+        <!-- Coins -->
+        <div class="page active" id="coins_page">
+          <div class="coins"></div>
+        </div>
+
+        <!-- Chart -->
+        <div class="page" id="live_reports_page">
+          <div class="graph" id="coins_graph"></div>
+        </div>
+
+        <!-- About -->
+        <div class="page" id="about_page">
+          <div class="about">
+            <article class="description">
+              <h2>About MazeCoin</h2>
+              <p>Welcome to MazeCoin, your interactive portal to explore the thrilling realm of cryptocurrencies.
+                Navigate
+                through an intricate labyrinth of figures to uncover the current state of various cryptocurrencies,
+                including the undisputed leader, Bitcoin. From real-time prices to live charts capturing market
+                fluctuations, MazeCoin provides an immersive experience to keep you updated on the latest trends.</p>
+              <h4>About the programer</h4>
+              <div>Deborah Mizrahi</div>
+              <div><strong>Email:</strong><a href="mailto:debimizfel@gmail.com"> debimizfel@gmail.com</a></div>
+              <div><strong>Git:</strong><a href="https://github.com/debimizfel"> https://github.com/debimizfel</a></div>
+              <div class="image">
+                <img src="assets/picture.png" alt="image">
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      Created by Deborah Mizrahi
+    </div>
+  </footer>
+</body>
+
+</html>

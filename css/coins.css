@@ -1,0 +1,110 @@
+.coins {
+    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.coins>article {
+    margin: 30px 0;
+    padding: 0;
+    position: relative;
+    width: 250px;
+
+    & .add-icon {
+        --size: 33px;
+        --thickness: 3.5px;
+        border: solid var(--thickness) var(--muted-color);
+        border-radius: 50%;
+        height: var(--size);
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        transition: all 0.4s;
+        width: var(--size);
+
+        &::after,
+        &::before {
+            background-color: var(--muted-color);
+            border-radius: calc(var(--thickness)/2);
+            content: "";
+            display: block;
+            height: calc(var(--size)/2);
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transition: all 0.4s;
+            translate: -50% -50%;
+            width: var(--thickness);
+        }
+
+        &::after {
+            rotate: 90deg;
+        }
+
+        &::before {
+            rotate: 0deg;
+        }
+
+        &.selected {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        &.selected::before,
+        &.selected::after {
+            background-color: var(--background-color);
+        }
+
+        &.selected::before {
+            rotate: 45deg;
+            translate: 50% -50%;
+        }
+
+        &.selected::after {
+            height: calc(var(--size)/3);
+            rotate: 135deg;
+            translate: -160% -32%;
+        }
+    }
+
+    & main,
+    & footer {
+        padding: 25px;
+    }
+
+    & main hgroup {
+        margin: 0;
+
+        & h3 {
+            text-transform: uppercase;
+        }
+    }
+
+    & footer {
+        margin: 0;
+
+        & details {
+            border-bottom-width: 0;
+            margin: 0;
+            padding: 0;
+
+            & .prices {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+    }
+}
+
+.selected-coins {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+    & .checkbox-coin {
+        margin: 10px;
+    }
+}

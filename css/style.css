@@ -1,0 +1,123 @@
+:root,
+[data-theme="dark"],
+[data-theme="light"] {
+    --primary: #FFA634 !important;
+    --primary-hover: #fcb251 !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.background {
+    background-image: url("../assets/background.svg");
+    background-position-x: calc(50% - 40px);
+    background-repeat: repeat;
+}
+
+.nav {
+    padding-top: 20px;
+
+    & img {
+        max-width: 80px;
+    }
+
+    & li.active {
+        color: var(--primary-hover);
+    }
+
+    & li.disabled {
+        color: grey;
+        cursor: default;
+    }
+
+    & h2 {
+        margin-bottom: 0;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary-hover);
+    }
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.page {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.currency {
+    &::before {
+        display: inline-block;
+        font-weight: bold;
+        width: 1.5em;
+    }
+
+    &.eur::before {
+        content: '€';
+    }
+
+    &.ils::before {
+        content: '₪';
+    }
+
+    &.usd::before {
+        content: '$';
+    }
+}
+
+.graph {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.about {
+
+    & .description {
+        overflow: hidden;
+        padding-right: calc(50% + var(--block-spacing-horizontal));
+        position: relative;
+
+        & .image {
+            bottom: 0;
+            left: 50%;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+
+            & img {
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: var(--card-background-color);
+    text-align: center;
+}
