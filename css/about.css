@@ -1,0 +1,23 @@
+.about {
+
+    & .description {
+        overflow: hidden;
+        padding-right: calc(50% + var(--block-spacing-horizontal));
+        position: relative;
+
+        & .image {
+            bottom: 0;
+            left: 50%;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+
+            & img {
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+}

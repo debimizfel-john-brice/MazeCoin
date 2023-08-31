@@ -99,6 +99,26 @@
     }
 }
 
+.currency {
+    &::before {
+        display: inline-block;
+        font-weight: bold;
+        width: 1.5em;
+    }
+
+    &.eur::before {
+        content: '€';
+    }
+
+    &.ils::before {
+        content: '₪';
+    }
+
+    &.usd::before {
+        content: '$';
+    }
+}
+
 .selected-coins {
     display: flex;
     flex-direction: column;

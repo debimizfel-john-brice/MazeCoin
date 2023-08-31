@@ -23,8 +23,8 @@ body {
 }
 
 .nav {
-    padding-top: 20px;
     flex-wrap: wrap;
+    padding-top: 20px;
 
     & img {
         max-width: 80px;
@@ -63,58 +63,6 @@ body {
 
     &.active {
         display: block;
-    }
-}
-
-.currency {
-    &::before {
-        display: inline-block;
-        font-weight: bold;
-        width: 1.5em;
-    }
-
-    &.eur::before {
-        content: '€';
-    }
-
-    &.ils::before {
-        content: '₪';
-    }
-
-    &.usd::before {
-        content: '$';
-    }
-}
-
-.graph {
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 100px;
-    margin-top: 30px;
-    padding: 10px;
-}
-
-.about {
-
-    & .description {
-        overflow: hidden;
-        padding-right: calc(50% + var(--block-spacing-horizontal));
-        position: relative;
-
-        & .image {
-            bottom: 0;
-            left: 50%;
-            position: absolute;
-            right: 0;
-            top: 0;
-
-
-            & img {
-                height: 100%;
-                object-fit: cover;
-                width: 100%;
-            }
-        }
     }
 }
 
