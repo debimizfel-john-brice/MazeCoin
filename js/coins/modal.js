@@ -62,7 +62,6 @@ function confirm_too_many_coins(confirm_button) {
     const button_ids = $("input[type='checkbox'][name='remove_coin']:not(:checked)")
         .map((_, e) => $(e).data("button-id"));
 
-    console.log(button_ids);
     for (const id of button_ids) {
         $("#" + id).trigger("click");
     }

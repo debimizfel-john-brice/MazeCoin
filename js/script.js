@@ -23,9 +23,12 @@ $(() => {
         }
         intervals = [];
 
-        if (this.id === "live_reports") {
+        if (this.id === "nav_live_reports") {
             go_to_live_reports(intervals);
         }
+
+        $("#search-input").attr("disabled", this.id !== "nav_coins");
+
     });
 });
 

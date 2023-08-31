@@ -105,11 +105,11 @@ function toggle_coin(button) {
 
     const selected_button_ids = $(".coins .add-icon.selected").map((_, e) => e.id);
     if (selected_button_ids.length <= 5 && selected_button_ids.length > 0) {
-        $("#live_reports").removeClass("disabled");
+        $("#nav_live_reports").removeClass("disabled");
     } else if (selected_button_ids.length >= 6) {
         too_many_coins(button, selected_button_ids);
     } else {
-        $("#live_reports").addClass("disabled");
+        $("#nav_live_reports").addClass("disabled");
     }
 }
 

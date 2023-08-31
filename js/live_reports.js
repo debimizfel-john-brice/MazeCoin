@@ -47,12 +47,24 @@ function go_to_live_reports(intervals) {
 }
 
 async function update_graph(chart, coins) {
-    console.log("click");
     const prices = await get_chart_prices(Object.keys(coins));
     for (id in coins) {
         coins[id].data.push(prices[id]);
     }
+
     chart.data.labels.push(format_time(new Date()));
+    chart.update();
+
+    for (id in coins) {
+        if (coins[id].data.length > 10) {
+            coins[id].data.shift();
+        }
+    }
+
+    if (chart.data.labels.length > 10) {
+        chart.data.labels.shift();
+    }
+
     chart.update();
 }
 
