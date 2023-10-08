@@ -18,7 +18,13 @@ Welcome to MazeCoin, your interactive portal to explore the thrilling realm of c
 
 ## Preview
 https://debimizfel.github.io/Cryptocurrenices/
-### Borad
-![](https://imgur.com/8AFaqh0.png) 
-### Tasks
-![](https://imgur.com/l8oAc9c.png)
+### Home page: Shows the most common coins.
+![](https://i.imgur.com/mYpS0PE.png) 
+### Prices: Shows the prices of every coin in EUR, ILS, and USD. 
+![](https://i.imgur.com/RsEKESv.png)
+### Search: You can search every coin you would check.
+![](https://i.imgur.com/O2BnFU6.png)
+### Select: You can select until 5 coins you would see in live reports.
+![](https://i.imgur.com/KBRB4fJ.png)
+### Live report: Here you can see the selected coins in real time.
+![](https://i.imgur.com/gQd5TZu.png)
