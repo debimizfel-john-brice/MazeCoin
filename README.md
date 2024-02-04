@@ -1,4 +1,4 @@
-# Cryptocurrencies
+# MazeCoins
 
 ### Description
 Welcome to MazeCoin, your interactive portal to explore the thrilling realm of cryptocurrencies. Navigate through an intricate labyrinth of figures to uncover the current state of various cryptocurrencies, including the undisputed leader, Bitcoin. From real-time prices to live charts capturing market fluctuations, MazeCoin provides an immersive experience to keep you updated on the latest trends.
